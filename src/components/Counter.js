@@ -9,10 +9,11 @@ class Counter extends Component {
     }
   }
   increment(){
-    this.setState({
-      count: 0
-    })
-  }
+    this.setState(prevState => ({
+     count: prevState.count + 1
+
+  }))
+}
   
   render() {
     return (
